@@ -31,7 +31,7 @@
 
 // Role-cycling typed line in hero (only on pages that have it)
 (function(){
-  var roles = ["Anglican Deacon", "Web Developer", "Financial Educator", "Writer"];
+  var roles = ["Anglican Priest", "Web Developer", "Financial Educator", "Certified Writer"];
   var el = document.getElementById('roleCycle');
   if (!el) return;
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
