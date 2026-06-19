@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Works — Benjamin Olusola Obe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav-bar">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="initial">B</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav-menu" id="navMenu" aria-hidden="true">
+    <div class="nav-menu-inner">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="works.html" class="nav-link is-active">Works</a>
+      <a href="testimonials.html" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-menu-foot">
+        <span class="eyebrow">Reach me</span>
+        <a href="mailto:benjaminobe45@gmail.com">benjaminobe45@gmail.com</a>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <header class="page-header">
+    <div class="wrap">
+      <span class="eyebrow">Works</span>
+      <h1>Shopify builds &amp; full-stack projects</h1>
+      <p class="lede">A close look at the Glowsbyniffy conversion landing page, plus other client work across web and content.</p>
+    </div>
+  </header>
+
+  <!-- ============ CASE STUDY: GLOWSBYNIFFY ============ -->
+  <section class="section-dark" id="case-study">
+    <div class="wrap reveal">
+      <span class="eyebrow">Featured Build</span>
+      <h2 class="title">Glowsbyniffy — Shopify conversion landing page</h2>
+      <p class="body-text">A Nigerian skincare brand needed a dedicated landing page for its traditional stretch-marks-and-scar oil — one product, five variants, built to convert. I designed and coded the entire section from scratch inside the Shopify theme editor, on a phone, end to end.</p>
+
+      <div class="case-meta">
+        <span class="chip">Shopify Liquid</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Sense Theme (OS 2.0)</span>
+        <span class="chip">HTML / CSS</span>
+        <span class="chip">Built entirely on mobile</span>
+      </div>
+
+      <div class="editor-mock">
+        <div class="editor-bar">
+          <span class="editor-dot" style="background:#E0615B;"></span>
+          <span class="editor-dot" style="background:#E0B65B;"></span>
+          <span class="editor-dot" style="background:#74C68D;"></span>
+          <span class="url">sections/glows-landing.liquid</span>
+        </div>
+        <div class="editor-body"><span class="ln">01</span><span class="tag-liquid">{% for variant in product.variants %}</span>
+<span class="ln">02</span>&nbsp;&nbsp;&lt;option value="{{&nbsp;variant.id&nbsp;}}"
+<span class="ln">03</span>&nbsp;&nbsp;&nbsp;&nbsp;data-compare="{{&nbsp;variant.compare_at_price&nbsp;}}"&gt;
+<span class="ln">04</span>&nbsp;&nbsp;&nbsp;&nbsp;{{&nbsp;variant.title&nbsp;}} <span class="com">// 5 variants, one form</span>
+<span class="ln">05</span>&nbsp;&nbsp;&lt;/option&gt;
+<span class="ln">06</span><span class="tag-liquid">{% endfor %}</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-card">
+          <h4>Dynamic price comparison</h4>
+          <p>Selecting a variant updates a live strikethrough "compare at" price alongside the sale price and a SALE badge — built so customers see the saving before they commit, not after.</p>
+        </div>
+        <div class="result-card">
+          <h4>Variant-aware product image</h4>
+          <p>A small product photo switches automatically to match the selected variant, sourced directly from Shopify's CDN via Liquid's image_url filter.</p>
+        </div>
+        <div class="result-card">
+          <h4>Conversion-tuned CTA</h4>
+          <p>Replaced a generic "Add to Cart" with direct, problem-naming copy: "I need to get rid of my stretch marks / scars" — tested directly against the brand's actual customer language.</p>
+        </div>
+        <div class="result-card">
+          <h4>Theme conflict resolution</h4>
+          <p>Diagnosed and removed a duplicate variant-picker section left over from the Sense theme defaults that was rendering a second, conflicting Add to Cart form.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;">
+        <a class="btn btn-ghost" href="https://glowsbyniffy.com/pages/traditional-stretch-marks-oil" target="_blank" rel="noopener">View live page →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ALSO BUILT ============ -->
+  <section>
+    <div class="wrap reveal">
+      <span class="eyebrow">Also Built</span>
+      <h2 class="title">Other work</h2>
+      <div class="project-list">
+        <div class="project-row">
+          <div>
+            <h3>Tamicleans (UK)</h3>
+            <div class="desc">Web development support for a UK-based cleaning services business.</div>
+          </div>
+          <div class="meta">Freelance client</div>
+        </div>
+        <div class="project-row">
+          <div>
+            <h3>Excel WealthPro digital funnel</h3>
+            <div class="desc">End-to-end product launch: ebook, Netlify-hosted sales page, Selar checkout, and a Facebook ad campaign.</div>
+          </div>
+          <div class="meta">Founder &amp; developer</div>
+        </div>
+        <div class="project-row">
+          <div>
+            <h3>Diocese of Lagos — Media Directorate</h3>
+            <div class="desc">Technical and web support for diocesan media and communications.</div>
+          </div>
+          <div class="meta">Freelance client</div>
+        </div>
+        <div class="project-row">
+          <div>
+            <h3>UK/US beauty businesses</h3>
+            <div class="desc">Web development and storefront support for independent beauty brands.</div>
+          </div>
+          <div class="meta">Freelance client</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Benjamin Olusola Obe — Built with Claude, deployed with intent.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

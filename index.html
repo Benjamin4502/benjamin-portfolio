@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benjamin Olusola Obe — Theologian &amp; Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav-bar">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="initial">B</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav-menu" id="navMenu" aria-hidden="true">
+    <div class="nav-menu-inner">
+      <a href="index.html" class="nav-link is-active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="works.html" class="nav-link">Works</a>
+      <a href="testimonials.html" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-menu-foot">
+        <span class="eyebrow">Reach me</span>
+        <a href="mailto:benjaminobe45@gmail.com">benjaminobe45@gmail.com</a>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div class="initial-lg">B</div>
+        <div class="role-cycle" id="roleCycle" aria-live="polite">Anglican Deacon<span class="cursor"></span></div>
+      </div>
+      <h1>Benjamin Olusola Obe</h1>
+      <h1><em>Theology in writing. Discipline in code.</em></h1>
+      <p class="lede">I'm a vicar and theologian who also builds Shopify storefronts and writes financial education content. Three vocations, one standard: clear thinking, precisely executed.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="works.html">View my work</a>
+        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ TEASER CARDS ============ -->
+  <section>
+    <div class="wrap reveal">
+      <span class="eyebrow">Start here</span>
+      <h2 class="title">Three vocations, one site</h2>
+      <div class="teaser-grid">
+        <a href="about.html" class="teaser-card">
+          <span class="tag">About</span>
+          <h3>A theologian's discipline, applied broadly</h3>
+          <p>Ordained Deacon, vicar, and lifelong student of liturgy — and how that same precision shapes everything else I build.</p>
+          <span class="teaser-link">Read more →</span>
+        </a>
+        <a href="works.html" class="teaser-card">
+          <span class="tag">Works</span>
+          <h3>Shopify builds &amp; full-stack projects</h3>
+          <p>A close look at the Glowsbyniffy conversion landing page, plus other client work across web and content.</p>
+          <span class="teaser-link">See the work →</span>
+        </a>
+        <a href="contact.html" class="teaser-card">
+          <span class="tag">Contact</span>
+          <h3>Let's work together</h3>
+          <p>Open to freelance web development, Shopify builds, and content writing. Based in Lagos, flexible across time zones.</p>
+          <span class="teaser-link">Get in touch →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Benjamin Olusola Obe — Built with Claude, deployed with intent.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
